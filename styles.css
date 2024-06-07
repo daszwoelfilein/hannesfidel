@@ -9,7 +9,24 @@ html {
     text-align:center;
   }
 h2 {
-  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  text-align:left;
+  text-transform: normal;
+}
+h3{
+  font-size: 16px;
+  font-weight:normal;
+  text-align:left;
+}
+h4{
+  font-size: 16px;
+  font-weight:normal;
+  text-align:left;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
+
 }
 
   header {
@@ -44,17 +61,17 @@ h2 {
   }
   
   a {
-    color: #41963a;
+    color:rgb(22, 160, 22);
     text-decoration: none;
   }
   
   a:hover {
-      color: black;
+      color:rgb(250, 247, 243);
       text-decoration: none;
   }
   
   .link-1 {
-    color: Tomato;
+    color:orangered;
     text-decoration: none;
   }
   
@@ -95,12 +112,61 @@ h2 {
     padding-bottom: 24px;
   }
 
+
   @media only screen and (max-width: 1200px) {
     .column {
       overflow: hidden;
       height: 100%;
     }
   }
+
+  .slideshow {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    position: relative;
+  }
+  
+  .slide.left-half {
+    cursor: w-resize; /* Left arrow cursor */
+  }
+  
+  .slide.right-half {
+    cursor: e-resize; /* Right arrow cursor */
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .pagination {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    color: black;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2px 6px;
+    border-radius: 5px;
+    backdrop-filter: blur(2px);
+  }
+  
+  /* Slideshow container styling */
+  .slideshow {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  hr {
+  margin-bottom:24px;
+  }
+
   footer {
     bottom: 0px;
     width:100%;
@@ -111,6 +177,6 @@ h2 {
   @media only screen and (max-width: 1200px) {
     footer {
       position:relative;
-      color: grey;
+      color: rgb(153, 153, 153);
     }
   }
